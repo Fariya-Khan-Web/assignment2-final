@@ -1,0 +1,247 @@
+/* Common-styles Common-styles Common-styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  color: white;
+  background-color: black;
+}
+.middle{
+  width: 70%;
+  margin: 0px auto;
+}
+.text-center{
+  text-align: center;
+}
+h2{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.bg-color{
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+.paragraph{
+  color: rgba(255, 255, 255, 0.5);
+}
+button{
+  color: white;
+  font-size: 18px;
+  padding: 16px 40px;
+  border: 0px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+}
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+/* POSTER POSTER POSTER */
+.poster{
+  background: linear-gradient(180.00deg,rgba(119, 119, 119, 0), rgb(53, 53, 53),rgba(119, 119, 119, 0) 100%);
+}
+nav{
+  padding: 60px;
+  justify-content: space-between;
+}
+nav>h3{
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(230, 83, 60);}
+nav>ul{
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 42px;
+}
+li{
+  font-size: 18px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h1{
+  margin-top: 70px;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+.banner>p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.margin-r{
+  margin-right: 50px;
+}
+#nav-home{
+  padding: 8px 20px;
+}
+main{
+  justify-content: space-between;
+}
+#exeption{
+  background-color: rgb(5, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width:576px) {
+  nav{
+    padding: 30px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .middle{
+    width: 88%;
+    margin: 0px auto;
+  }
+  .hide{
+    display: none;
+  }
+  main{
+    flex-direction: column;
+  }
+}
+/* HABITS HABITS HABITS */
+h2{
+  margin-top: 100px;
+}
+#habits>p{
+  margin-top: 14px;
+  margin-bottom: 50px;
+}
+#card-box{
+  justify-content: space-between;
+}
+.card{
+  width: 22%;
+}
+.card>h4{
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+.round{
+  width: 80%;
+  border-radius: 50%;
+}
+@media screen and (max-width:576px) {
+  #card-box{
+    flex-direction: column;
+  }
+  .card{
+    width: 66%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+  } 
+}
+/* RUN RUN RUN */
+#run{
+  margin-top: 100px;
+  border-radius: 18px;
+  justify-content: space-between;
+}
+#runtext{
+  width: 40%;
+  margin: 40px;
+}
+#runtext>h2{
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+#runtext>button{
+  margin-top: 50px;
+}
+#run-img{
+  width: 34%;
+  padding: 30px;
+}
+#run-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+@media screen and (max-width: 576px) {
+  .run{  
+    flex-direction: column;
+  }
+  #runtext{
+    width: 80%;
+  }
+  #runtext>button{
+    width: 100%;
+  }
+  #run-img{
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+/* TRAINING TRAINING TRAINING */
+.exercises{
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 210px);
+}
+.optional>img{
+  width: 100%;
+}
+/* TEAM TEAM TEAM */
+.team>p{
+  margin-top: 14px;
+  margin-bottom: 58px;
+
+}
+.trainer{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.trainers{
+  padding: 20px;
+  border-radius: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+/* FOOTER FOOTER FOOTER */
+footer{
+  margin-top: 90px;
+}
+footer>div{
+  justify-content: space-between;
+}
+.last{
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(230, 83, 60);
+}
+.massege{
+  margin-top: 20px;
+}
+.paragraph>li{
+  margin-top: 20px;
+}
+.links{
+  margin-bottom: 80px;
+}
+li>h4{
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 80px;
+}
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer>p{
+  padding: 36px;
+}
