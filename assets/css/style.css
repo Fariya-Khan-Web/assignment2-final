@@ -46,6 +46,12 @@ button{
 .grid{
   display: grid;
 }
+@media screen and (max-width: 576px) {
+    h2{
+        font-size: 2rem;
+    }
+    
+}
 /* POSTER POSTER POSTER */
 .poster{
   background: linear-gradient(180.00deg,rgba(119, 119, 119, 0), rgb(53, 53, 53),rgba(119, 119, 119, 0) 100%);
@@ -98,6 +104,7 @@ main{
 @media only screen and (max-width:576px) {
   nav{
     padding: 30px;
+    padding-right: 0px;
   }
   h1{
     font-size: 3rem;
@@ -177,13 +184,16 @@ h2{
   }
   #runtext{
     width: 80%;
+    align-self: center;
   }
   #runtext>button{
     width: 100%;
   }
   #run-img{
-    width: 80%;
+    width: 82%;
     margin: 0px auto;
+    margin-bottom: 10px;
+
   }
 }
 /* TRAINING TRAINING TRAINING */
@@ -193,6 +203,40 @@ h2{
 }
 .optional>img{
   width: 100%;
+}
+/* BMI BMI BMI BMI BMI */
+.bmi-title{
+    width: 46%;
+    margin: 0 auto;
+}
+.bmi-title>p{
+    margin-top: 16px;
+    margin-bottom: 88px;
+
+}
+.calc{
+    padding-top: 52px;
+    justify-content: space-between;
+}
+.table-form-title{
+    font-size: 1.6rem;
+}
+table{
+    padding-top: 52px;
+    padding-bottom: 132px;
+}
+td{
+    padding: 14px 20px;
+}
+.form{
+    grid-template-columns: repeat(2, auto);
+}
+.input{
+    width: 55%;
+}
+.input>p{
+    margin-top: 16px;
+    margin-bottom: 34px;
 }
 /* TEAM TEAM TEAM */
 .team>p{
@@ -211,6 +255,11 @@ h2{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 576px) {
+    .trainers{
+        grid-template-columns: 100%;
+    }
 }
 /* FOOTER FOOTER FOOTER */
 footer{
@@ -244,4 +293,16 @@ hr{
 }
 footer>p{
   padding: 36px;
+}
+@media screen and (max-width: 576px) {
+  footer>div{
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  li>h4{
+    margin-top: 30px;
+  }
+  .links{
+    margin-bottom: 30px;
+  }
 }
