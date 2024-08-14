@@ -125,6 +125,9 @@ main{
   margin-right: 10px;
   margin-top: 10px;
 }
+.menubar{
+  display: none;
+}
 @media screen and (max-width: 992px){
   nav{
     width: 90%;
@@ -144,6 +147,10 @@ main{
   nav{
     padding: 30px;
     padding-right: 0px;
+  }
+  .menubar{
+    display: block;
+    font-size: 1rem;
   }
   h1{
     font-size: 3rem;
