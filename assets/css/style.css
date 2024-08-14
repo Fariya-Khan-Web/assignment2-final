@@ -328,6 +328,20 @@ input{
   margin: 5px;
   width: 70%;
 }
+.trans-div>button{
+  margin-top: 10px;
+}
+@media screen and (max-width: 576px) {
+  .transform{
+    flex-direction: column;
+  }
+  .trans-img{
+    width: calc(100% - 28px);
+  }
+  .trans-div{
+    margin: 20px;
+  }
+}
 
 /* TEAM TEAM TEAM */
 .team>p{
