@@ -28,7 +28,7 @@ h2{
   font-weight: 800;
 }
 .bg-color{
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .paragraph{
   color: rgba(255, 255, 255, 0.5);
@@ -297,6 +297,38 @@ input{
     margin: 0px auto;
   }
 }
+/* TRANSFORM TRANSFORM TRANSFORM */
+.transform{
+  margin-top: 50px;
+  border-radius: 18px;
+}
+.trans-img{
+  width: 30%;
+  height: 300px;
+  border-radius: 18px;
+  margin: 14px;
+}
+.trans-img>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.trans-div{
+  margin-left: 20px;
+}
+#transform-title{
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.trans-p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.trans-input>input{
+  margin: 5px;
+  width: 70%;
+}
+
 /* TEAM TEAM TEAM */
 .team>p{
   margin-top: 14px;
