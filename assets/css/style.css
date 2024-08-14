@@ -12,6 +12,7 @@
   font-style: normal;
 }
 body{
+  width: 100%;
   color: white;
   background-color: black;
 }
@@ -50,7 +51,6 @@ button{
     h2{
         font-size: 2rem;
     }
-    
 }
 /* POSTER POSTER POSTER */
 .poster{
@@ -101,6 +101,14 @@ main{
   background-color: rgb(5, 0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
 }
+@media screen and (max-width: 992px){
+  nav{
+    width: 90%;
+  }
+  main{
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width:576px) {
   nav{
     padding: 30px;
@@ -142,8 +150,18 @@ h2{
   width: 80%;
   border-radius: 50%;
 }
+@media screen and (max-width:992px) {
+  #card-box{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .card{
+    width: 100%;
+  }
+}
 @media screen and (max-width:576px) {
   #card-box{
+    display: flex;
     flex-direction: column;
   }
   .card{
@@ -222,14 +240,17 @@ h2{
     font-size: 1.6rem;
 }
 table{
-    padding-top: 52px;
-    padding-bottom: 132px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 52px;
+    margin-bottom: 132px;
+    margin-left: 0px;
 }
-td{
+/* td{
     padding: 14px 20px;
-}
+} */
 .form{
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, calc((100%-12px)/2));
+    gap: 12px;
 }
 .input{
     width: 55%;
@@ -237,6 +258,39 @@ td{
 .input>p{
     margin-top: 16px;
     margin-bottom: 34px;
+}
+input{
+  padding: 12px;
+  border: 0px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.input-five{
+  grid-column: span 2;
+}
+@media screen and (max-width: 992px) {
+  .bmi-title{
+    width: 90%;
+  }
+  #table-form{
+    flex-direction: column;
+  }
+  .input{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bmi-title{
+    width: 90%;
+  }
+  #table-form{
+    margin: auto;
+    flex-direction: column;
+  }
+  .input{
+    width: 100%;
+    margin: 0px auto;
+  }
 }
 /* TEAM TEAM TEAM */
 .team>p{
