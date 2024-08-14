@@ -11,6 +11,15 @@
   font-weight: 400;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+span{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+                
 body{
   width: 100%;
   color: white;
@@ -128,7 +137,21 @@ main{
 .menubar{
   display: none;
 }
+@media screen and (max-width: 1440px) {
+  h1{
+    font-size: 3.5rem;
+  }
+  .sticker-2{
+    bottom: 200px;
+  }
+  .sticker-1{
+    bottom: 500px;
+  }
+}
 @media screen and (max-width: 992px){
+  h1{
+    font-size: 5rem;
+  }
   nav{
     width: 90%;
   }
