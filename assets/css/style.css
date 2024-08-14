@@ -69,6 +69,7 @@ nav>ul{
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 42px;
+  padding-right: 14px;
 }
 li{
   font-size: 18px;
@@ -101,12 +102,42 @@ main{
   background-color: rgb(5, 0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
 }
+.absolute{
+  position: absolute;
+  padding: 16px 24px;
+  border: 1px solid  rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+.sticker-1{
+  bottom: 400px;
+  right: 200px;
+}
+.sticker-2{
+  right: 500px;
+  bottom: 120px;
+}
+.orange{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(230, 83, 60);
+  margin-right: 10px;
+  margin-top: 10px;
+}
 @media screen and (max-width: 992px){
   nav{
     width: 90%;
   }
   main{
     flex-direction: column;
+  }
+  .sticker-1{
+    bottom: -200px;
+  }
+  .sticker-2{
+    bottom: -400px;
+    right: 600px;
   }
 }
 @media only screen and (max-width:576px) {
@@ -126,6 +157,14 @@ main{
   }
   main{
     flex-direction: column;
+  }
+  .sticker-1{
+    right: 80px;
+    bottom: 50px;
+  }
+  .sticker-2{
+    bottom: -300px;
+    right: 300px;
   }
 }
 /* HABITS HABITS HABITS */
