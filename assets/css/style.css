@@ -245,9 +245,14 @@ table{
     margin-bottom: 132px;
     margin-left: 0px;
 }
-/* td{
+.contant-table{
+  border-collapse: collapse;
+  text-align: left;
+}
+td, th{
     padding: 14px 20px;
-} */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 .form{
     grid-template-columns: repeat(2, calc((100%-12px)/2));
     gap: 12px;
